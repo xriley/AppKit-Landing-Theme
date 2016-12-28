@@ -26,7 +26,7 @@ If you'd like to **use the template without the attribution**, you can check out
 
 
 ##Latest Version
-**v1.1** - 15 June 2016
+**v1.2** - 28 Dec 2016
 
 [Changelog](http://themes.3rdwavemedia.com/website-templates/appkit-landing-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
