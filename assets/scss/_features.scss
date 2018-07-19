@@ -1,0 +1,59 @@
+/* ======= Features Section ======= */
+.features-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .section-title {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 36px;
+        font-weight:300;
+    }
+    .intro {
+        color: $text-grey;
+        font-size: 16px;
+        max-width: 760px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        a {
+	        color: darken($text-grey, 15%);
+	        &:hover {
+		        color: $text-color;
+	        }
+        }
+    }
+}
+
+.feature-nav {
+
+    text-align: center;
+    margin-bottom: 30px;
+   .nav-link {
+       position: relative;
+       background: none;
+       padding: 10px 0;
+       color: $text-color-secondary;
+       font-size: 16px;
+       
+       &:hover {
+           background: none;
+           color: $color-primary;
+       }
+       
+       .svg-inline--fa {
+           margin-right: 15px;
+           width: 20px;
+           font-size: 30px;
+           position: relative;
+           top: -2px;
+       }
+       &.active {
+           color: $color-primary;
+           background: none;
+           font-weight:bold;
+       }
+ 
+    }
+}
+.feature-content {
+    
+}

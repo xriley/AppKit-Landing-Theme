@@ -1,11 +1,11 @@
 /*!
  * jQuery.scrollTo
- * Copyright (c) 2007-2015 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com
+ * Copyright (c) 2007-2015 Ariel Flesler - aflesler ○ gmail • com | http://flesler.blogspot.com
  * Licensed under MIT
  * http://flesler.blogspot.com/2007/10/jqueryscrollto.html
  * @projectDescription Lightweight, cross-browser and highly customizable animated scrolling with jQuery
  * @author Ariel Flesler
- * @version 2.1.1
+ * @version 2.1.2
  */
 ;(function(factory) {
 	'use strict';
@@ -83,9 +83,9 @@
 					}
 					// Relative/Absolute selector
 					targ = win ? $(targ) : $(targ, elem);
-					if (!targ.length) return;
 					/* falls through */
 				case 'object':
+					if (targ.length === 0) return;
 					// DOMElement / jQuery
 					if (targ.is || targ.style) {
 						// Get the real position of the target

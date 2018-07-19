@@ -25,8 +25,8 @@ $(document).ready(function() {
         
 		$('body').scrollTo(target, 800, {offset: -50, 'axis':'y'});
         //Collapse mobile menu after clicking
-		if ($('.navbar-collapse').hasClass('in')){
-			$('.navbar-collapse').removeClass('in').addClass('collapse');
+		if ($('.navbar-collapse').hasClass('show')){
+			$('.navbar-collapse').removeClass('show');
 		}
 		
 	});
