@@ -1,6 +1,6 @@
 /*   
  * Template Name: Appkit Landing - Responsive Website Template for Developers
- * Version: 2.0
+ * Version: 2.1
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * License: Creative Commons Attribution 3.0 License
@@ -862,7 +862,7 @@ a:focus {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #40babd;
-  padding-top: 1px;
+  padding-top: 3px;
   color: #fff;
 }
 

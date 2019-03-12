@@ -57,8 +57,9 @@
             font-size: 18px;
             @include border-radius(50%);
             background: $color-primary;
-            padding-top:1px;
+            padding-top:3px;
             color: #fff;
+            
             &.google {
                 background: $google;
                 &:hover {
