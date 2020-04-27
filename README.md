@@ -10,9 +10,9 @@ We will update and improve the template based on user feedback so get in touch o
 
 ## Author & License
 
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE under the [Creative Commons Attribution 3.0 License (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
+This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE as long as you **keep the footer attribution link**. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work.
 
-If you'd like to **use the template without the attribution**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/)
+If you'd like to **use the template without the attribution link**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/)
 
 #### Follow Xiaoying
 
@@ -28,7 +28,7 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 
 
 ## Latest Version
-**v2.1** - 12 March 2019
+**v2.2** - 27 April 2020
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
@@ -48,4 +48,4 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 - [Google Fonts](https://fonts.google.com/)
 - [Illustration:Minimal Office Illustrations](http://www.sketchappsources.com/free-source/1388-minimal-office-desk-illustrations-icons-sketch-freebie-resource.html)
 - [jQuery ScrollTo](http://flesler.blogspot.co.uk/2007/10/jqueryscrollto.html)
-- [Product Screenshots:AppKit Admin Theme](https://wrapbootstrap.com/theme/admin-appkit-admin-theme-angularjs-WB051SCJ1?ref=3wm)
+- [Product Screenshots:Appify Admin Theme](https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/)

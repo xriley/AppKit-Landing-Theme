@@ -73,11 +73,7 @@
         }
     }
 
-    a.btn {
-        background: rgba(0, 0, 0, 0.2);
+    a.btn-inverse {
         color: #fff;
-        &:hover {
-           background: rgba(0, 0, 0, 0.4); 
-        }
     }
 }

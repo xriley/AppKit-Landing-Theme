@@ -1,9 +1,8 @@
 /*   
  * Template Name: Appkit Landing - Responsive Website Template for Developers
- * Version: 2.1
+ * Version: 2.2
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
  * Website: https://themes.3rdwavemedia.com/
 */
 body {
@@ -54,6 +53,12 @@ a:focus {
   margin-right: 5px;
 }
 
+.btn:focus, a.btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 .btn-cta, a.btn-cta {
   font-weight: bold;
   font-size: 16px;
@@ -70,6 +75,18 @@ a:focus {
   background: #3aa7aa;
   color: #fff;
   border: 1px solid #3aa7aa;
+}
+
+.btn-inverse {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid transparent;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -433,9 +450,12 @@ a:focus {
 }
 
 .about-section .items-wrapper .figure-holder {
-  min-height: 170px;
   margin-bottom: 15px;
   vertical-align: bottom;
+}
+
+.about-section .items-wrapper .figure-image {
+  max-width: 220px;
 }
 
 .about-section .items-wrapper .item-inner {
@@ -455,7 +475,7 @@ a:focus {
 }
 
 .technologies {
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 .technologies .list-inline-item {
@@ -770,13 +790,8 @@ a:focus {
   font-weight: 500;
 }
 
-.pricing-wrapper a.btn {
-  background: rgba(0, 0, 0, 0.2);
+.pricing-wrapper a.btn-inverse {
   color: #fff;
-}
-
-.pricing-wrapper a.btn:hover {
-  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ======= Team Section ======= */
@@ -915,7 +930,7 @@ a:focus {
 }
 
 .team-section .social a.medium {
-  background: #1a1919;
+  background: #1a1a1a;
 }
 
 .team-section .social a.medium:hover {

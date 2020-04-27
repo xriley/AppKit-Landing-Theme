@@ -18,10 +18,15 @@
     .items-wrapper {
         margin-bottom: 60px;
         .figure-holder {
-            min-height: 170px;
             margin-bottom: 15px;
             vertical-align:bottom;
         }
+        
+        .figure-image {
+	        max-width: 220px;
+        }
+        
+        
         .item-inner {
             padding: 30px;
         }
@@ -41,7 +46,7 @@
 }
 
 .technologies {
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     .list-inline-item {
         margin-right: 15px;
         &:last-child {

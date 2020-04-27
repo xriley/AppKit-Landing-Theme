@@ -1,9 +1,20 @@
+/* ======= Fixed header when scrolled ======= */
+    
+$(window).bind('load', function() {
+     if ($(window).scrollTop() > 0) {
+         $('#header').addClass('header-scrolled');
+     }
+     else {
+         $('#header').removeClass('header-scrolled');
+     }
+});
+
 $(document).ready(function() {
 
     
     /* ======= Fixed header when scrolled ======= */
     
-    $(window).bind('scroll', function() {
+    $(window).bind('scroll resize', function() {
          if ($(window).scrollTop() > 0) {
              $('#header').addClass('header-scrolled');
          }
