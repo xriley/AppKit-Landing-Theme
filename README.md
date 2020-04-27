@@ -4,6 +4,7 @@
 
 
 **Details** https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/
+
 **Demo:** http://themes.3rdwavemedia.com/demo/appkit-landing/
 
 AppKit Landing is a free Bootstrap landing page template designed to help developers & startups to promote their products and services. The **source SCSS files** are included so itÕs very easy to customise the template to suite your needs.
