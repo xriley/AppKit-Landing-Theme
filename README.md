@@ -3,7 +3,7 @@
 ## Theme Details & Demo
 
 
-**Details** https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/
+**Details:** https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/
 
 **Demo:** http://themes.3rdwavemedia.com/demo/appkit-landing/
 
@@ -53,4 +53,4 @@ If you'd like to **use the template without the footer attribution link**, you c
 - [Google Fonts](https://fonts.google.com/)
 - [Illustration:Minimal Office Illustrations](http://www.sketchappsources.com/free-source/1388-minimal-office-desk-illustrations-icons-sketch-freebie-resource.html)
 - [jQuery ScrollTo](http://flesler.blogspot.co.uk/2007/10/jqueryscrollto.html)
-- [Product Screenshots:Appify Admin Theme](https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/)
+- [Product Screenshots: Appify Admin Theme](https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/)
