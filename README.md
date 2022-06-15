@@ -1,4 +1,4 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/" target="_blank"><img src="http://themes.3rdwavemedia.com/wp-content/uploads/2016/01/Free-Bootstrap-Theme-for-Developers-Appkit-landing.png" alt="Free Bootstrap Theme for Developers and Startups" /></a>
+<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2018/07/Free-Bootstrap-Theme-for-Developers-Appkit-landing-1.jpg" alt="Free Bootstrap Theme for Developers and Startups" /></a>
 
 ## Theme Details & Demo
 
