@@ -47,7 +47,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 ## Credits
 - [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+- [FontAwesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Illustration:Minimal Office Illustrations](http://www.sketchappsources.com/free-source/1388-minimal-office-desk-illustrations-icons-sketch-freebie-resource.html)
 - Product Screenshots: Appify Admin Theme
