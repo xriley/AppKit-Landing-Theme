@@ -31,6 +31,7 @@ a {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 1.5;
+	text-decoration: none;
 	.fa {
 		margin-right: 5px;
 	}
@@ -106,20 +107,18 @@ a {
     bottom: 30px;
     margin-bottom: 0;
     
-    li {
+    li[data-bs-target] {
         background-color: rgba(256, 256, 256, 0.4);
         border: none;
         width: 11px;
         height: 11px;
-        margin: 0;
-        margin-right: 8px;
+	    margin-left: 5px;
+	    margin-right: 5px;
         @include border-radius(50%);
         &.active {
             background-color: $color-primary;
             width: 11px;
             height: 11px;
-            margin: 0;
-            margin-right: 8px;
         }
     }
 }
@@ -137,11 +136,15 @@ a {
         @include box-shadow(0 0 4px rgba(0, 0, 0, 0.5));
         a {
             color: $text-color;
-            
         }
         .logo {
             color: $color-primary;
-            padding-top: 12px;
+            top: 0;
+            
+            &:focus {
+	            color: $text-color;
+            }
+           
             .logo-icon-wrapper {
                 background: $color-primary;
                 width: 40px;
@@ -160,12 +163,12 @@ a {
             }
         }
         .main-nav .nav .nav-link {
-            color: $text-grey;
+            color: $text-color-secondary;
             &:hover {
-	            color: darken($text-grey, 5%);
+	            color: darken($text-color-secondary, 5%);
             }
         }
-        .main-nav .nav .nav-link.active {
+        .main-nav .nav .active .nav-link {
             color: $text-color;
             border-bottom: 4px solid $color-primary;
         }
@@ -173,21 +176,27 @@ a {
     a {
         color: #fff;
         @include transition (none);
-        &:hover {
+        &:hover, &:focus {
             text-decoration: none;
+            color: white;
         }
     }
     .logo {
         margin: 0;
-        display: inline-block;
-        float: left;
         font-size: 28px;
-        padding-top: 15px;
+        text-decoration: none;
+        position: absolute;
+        left: 1rem;
+        top: 8px;
+        &:focus {
+	        color: white;
+        }
         .logo-icon-wrapper {
             margin-right: 3px;
             position:relative;
             display: inline-block;
             top: -3px;
+            line-height: 1.2;
         }
         
         .logo-icon {
@@ -210,8 +219,10 @@ a {
         position: absolute;
         padding: 8px 10px;
         right:10px;
-        top: 10px;
-        background: rgba(0, 0, 0, 0.6);
+        top: 8px;
+        background: rgba(0, 0, 0, 0.8);
+        @include border-radius(2px);
+        
         
         &:focus {
             outline: none;
@@ -238,19 +249,12 @@ a {
         .nav-item{
             font-weight: normal;
             font-size: 14px;
-            margin-right: 10px;
-            
-            
+            margin-right: 30px;
             
             .nav-link {
                 color: rgba(256, 256, 256, 0.65);
                 font-weight: 700;
-                &.active {
-                    position: relative;
-                    background: none;
-                    color: #fff;
-                
-	            }
+
                 &:hover {  
                     color: #fff;   
                     background: none;         
@@ -268,6 +272,12 @@ a {
             &:last-child {
                 margin-right: 0;
             }
+        }
+        
+        &.active .nav-link {
+	        position: relative;
+            background: none;
+            color: #fff;
         }
 
         

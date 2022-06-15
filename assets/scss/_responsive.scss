@@ -5,13 +5,14 @@
         @include box-shadow(none);
         width: 100%;
         left: 0;
-        top: 60px;
+        top: 54px;
         position: absolute;
-        background: rgba(darken($text-color, 10%), 0.9);
-        z-index: 40;
+        background: white;
+        //z-index: 40;
+        @include box-shadow(0 5px 4px -4px rgba(0, 0, 0, 0.2));
     }
     
-    .header.header-scrolled .main-nav .nav .nav-link.active{
+    .header.header-scrolled .main-nav .nav .active .nav-link {
         color: $color-primary;
         border: none;
     }
@@ -21,8 +22,12 @@
         margin-right: 0;
     }
     
-    .main-nav .navbar-collapse .nav-item a {
+    .main-nav .nav .nav-item .nav-link{
         text-align: center;
+        color: $text-color;
+        &:hover {
+	        color: $color-primary;
+        }
     }
 
     .hero-section .figure-image {

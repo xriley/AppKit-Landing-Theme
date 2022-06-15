@@ -1,46 +1,77 @@
-/* ======= Fixed header when scrolled ======= */
+"use strict";
+
+/* ======= Header animation ======= */   
+const header = document.getElementById('header');  
+
+window.onload=function() 
+{   
+    headerAnimation(); 
+
+};
+
+window.onresize=function() 
+{   
+    headerAnimation(); 
+
+}; 
+
+window.onscroll=function() 
+{ 
+    headerAnimation(); 
+
+}; 
     
-$(window).bind('load', function() {
-     if ($(window).scrollTop() > 0) {
-         $('#header').addClass('header-scrolled');
-     }
-     else {
-         $('#header').removeClass('header-scrolled');
-     }
+
+function headerAnimation () {
+
+    var scrollTop = window.scrollY;
+	
+	if ( scrollTop > 0 ) {	    
+	    header.classList.add('header-scrolled');    
+	    	    
+	} else {
+	    header.classList.remove('header-scrolled');
+	}
+
+};
+
+
+
+
+let scrollLinks = document.querySelectorAll('.scrollto');
+const pageNavWrapper = document.getElementById('navbar-collapse');
+
+scrollLinks.forEach((scrollLink) => {
+
+	scrollLink.addEventListener('click', (e) => {
+		
+		e.preventDefault();
+
+		let element = document.querySelector(scrollLink.getAttribute("href"));
+		
+		const yOffset = 60; //page .header height
+		
+		//console.log(yOffset);
+		
+		const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+		
+		window.scrollTo({top: y, behavior: 'smooth'});
+		
+		
+		//Collapse mobile menu after clicking
+		if (pageNavWrapper.classList.contains('show')){
+			pageNavWrapper.classList.remove('show');
+		}
+
+		
+    });
+	
 });
 
-$(document).ready(function() {
+/* ===== Gumshoe SrollSpy ===== */
+/* Ref: https://github.com/cferdinandi/gumshoe  */
 
-    
-    /* ======= Fixed header when scrolled ======= */
-    
-    $(window).bind('scroll resize', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header').addClass('header-scrolled');
-         }
-         else {
-             $('#header').removeClass('header-scrolled');
-         }
-    });
-    
-    /* ======= Scrollspy ======= */
-    $('body').scrollspy({ target: '#header', offset: 100});
-    
-    /* ======= ScrollTo ======= */
-    $('a.scrollto').on('click', function(e){
-        
-        //store hash
-        var target = this.hash;
-                
-        e.preventDefault();
-        
-		$('body').scrollTo(target, 800, {offset: -50, 'axis':'y'});
-        //Collapse mobile menu after clicking
-		if ($('.navbar-collapse').hasClass('show')){
-			$('.navbar-collapse').removeClass('show');
-		}
-		
-	});
-
-
+// Initialize Gumshoe
+var spy = new Gumshoe('#navbar-collapse .nav-link', {
+	offset: 60
 });

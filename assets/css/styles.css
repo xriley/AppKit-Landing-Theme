@@ -47,6 +47,7 @@ a:focus {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 .btn .fa, a.btn .fa {
@@ -122,13 +123,13 @@ a:focus {
   margin-bottom: 0;
 }
 
-.carousel-indicators li {
+.carousel-indicators li[data-bs-target] {
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
   width: 11px;
   height: 11px;
-  margin: 0;
-  margin-right: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -139,12 +140,10 @@ a:focus {
   background-clip: padding-box;
 }
 
-.carousel-indicators li.active {
+.carousel-indicators li[data-bs-target].active {
   background-color: #40babd;
   width: 11px;
   height: 11px;
-  margin: 0;
-  margin-right: 8px;
 }
 
 /* ======= Header ======= */
@@ -172,7 +171,11 @@ a:focus {
 
 .header.header-scrolled .logo {
   color: #40babd;
-  padding-top: 12px;
+  top: 0;
+}
+
+.header.header-scrolled .logo:focus {
+  color: #494d55;
 }
 
 .header.header-scrolled .logo .logo-icon-wrapper {
@@ -197,14 +200,14 @@ a:focus {
 }
 
 .header.header-scrolled .main-nav .nav .nav-link {
-  color: #a2a6af;
+  color: #616670;
 }
 
 .header.header-scrolled .main-nav .nav .nav-link:hover {
-  color: #9499a3;
+  color: #555963;
 }
 
-.header.header-scrolled .main-nav .nav .nav-link.active {
+.header.header-scrolled .main-nav .nav .active .nav-link {
   color: #494d55;
   border-bottom: 4px solid #40babd;
 }
@@ -217,16 +220,22 @@ a:focus {
   -o-transition: none;
 }
 
-.header a:hover {
+.header a:hover, .header a:focus {
   text-decoration: none;
+  color: white;
 }
 
 .header .logo {
   margin: 0;
-  display: inline-block;
-  float: left;
   font-size: 28px;
-  padding-top: 15px;
+  text-decoration: none;
+  position: absolute;
+  left: 1rem;
+  top: 8px;
+}
+
+.header .logo:focus {
+  color: white;
 }
 
 .header .logo .logo-icon-wrapper {
@@ -234,6 +243,7 @@ a:focus {
   position: relative;
   display: inline-block;
   top: -3px;
+  line-height: 1.2;
 }
 
 .header .logo .logo-icon {
@@ -256,8 +266,16 @@ a:focus {
   position: absolute;
   padding: 8px 10px;
   right: 10px;
-  top: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  top: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 .main-nav .navbar-toggler:focus {
@@ -290,18 +308,12 @@ a:focus {
 .main-nav .nav .nav-item {
   font-weight: normal;
   font-size: 14px;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .main-nav .nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.65);
   font-weight: 700;
-}
-
-.main-nav .nav .nav-item .nav-link.active {
-  position: relative;
-  background: none;
-  color: #fff;
 }
 
 .main-nav .nav .nav-item .nav-link:hover {
@@ -321,6 +333,12 @@ a:focus {
 
 .main-nav .nav .nav-item:last-child {
   margin-right: 0;
+}
+
+.main-nav .nav.active .nav-link {
+  position: relative;
+  background: none;
+  color: #fff;
 }
 
 .nav > li > a {
@@ -438,7 +456,7 @@ a:focus {
 }
 
 .about-section .intro {
-  color: #a2a6af;
+  color: #8e949e;
   font-size: 16px;
   max-width: 760px;
   margin: 0 auto;
@@ -651,7 +669,7 @@ a:focus {
 }
 
 .features-section .intro {
-  color: #a2a6af;
+  color: #8e949e;
   font-size: 16px;
   max-width: 760px;
   margin: 0 auto;
@@ -659,7 +677,7 @@ a:focus {
 }
 
 .features-section .intro a {
-  color: #797f8b;
+  color: #686d79;
 }
 
 .features-section .intro a:hover {
@@ -687,9 +705,9 @@ a:focus {
 .feature-nav .nav-link .svg-inline--fa {
   margin-right: 15px;
   width: 20px;
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
-  top: -2px;
+  top: 2px;
 }
 
 .feature-nav .nav-link.active {
@@ -712,7 +730,7 @@ a:focus {
 }
 
 .pricing-section .intro {
-  color: #a2a6af;
+  color: #8e949e;
   font-size: 16px;
   max-width: 760px;
   margin: 0 auto;
@@ -809,7 +827,7 @@ a:focus {
 }
 
 .team-section .intro {
-  color: #a2a6af;
+  color: #8e949e;
   font-size: 16px;
   max-width: 760px;
   margin: 0 auto;
@@ -825,6 +843,14 @@ a:focus {
 .team-section .profile-image {
   width: 120px;
   height: 120px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 .team-section .members-wrapper {
@@ -847,13 +873,13 @@ a:focus {
 }
 
 .team-section .member-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #40babd;
+  color: #494d55;
 }
 
 .team-section .member-title {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 0;
   margin-bottom: 15px;
   color: #616670;
@@ -971,20 +997,26 @@ a:focus {
     box-shadow: none;
     width: 100%;
     left: 0;
-    top: 60px;
+    top: 54px;
     position: absolute;
-    background: rgba(49, 52, 58, 0.9);
-    z-index: 40;
+    background: white;
+    -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.2);
   }
-  .header.header-scrolled .main-nav .nav .nav-link.active {
+  .header.header-scrolled .main-nav .nav .active .nav-link {
     color: #40babd;
     border: none;
   }
   .main-nav .navbar-collapse .nav-item {
     margin-right: 0;
   }
-  .main-nav .navbar-collapse .nav-item a {
+  .main-nav .nav .nav-item .nav-link {
     text-align: center;
+    color: #494d55;
+  }
+  .main-nav .nav .nav-item .nav-link:hover {
+    color: #40babd;
   }
   .hero-section .figure-image {
     width: 300px;

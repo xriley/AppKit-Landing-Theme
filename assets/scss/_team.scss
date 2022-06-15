@@ -25,6 +25,7 @@
     .profile-image {
         width: 120px;
         height: 120px;
+        @include border-radius(50%);
     }
     .members-wrapper{
         max-width: 800px;
@@ -38,12 +39,12 @@
         height: 100%;
     }
     .member-name {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
-        color: $color-primary;
+        color: $text-color;
     }
     .member-title {
-        font-size: 16px;
+        font-size: 15px;
         margin-top:0;
         margin-bottom: 15px;
         color: $text-color-secondary;
