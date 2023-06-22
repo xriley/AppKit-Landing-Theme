@@ -1,6 +1,6 @@
 /*   
  * Template Name: Appkit Landing - Responsive Website Template for Developers
- * Version: 2.3
+ * Version: 2.0
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * Website: https://themes.3rdwavemedia.com/
@@ -121,9 +121,10 @@ a:focus {
 .carousel-indicators {
   bottom: 30px;
   margin-bottom: 0;
+  z-index: 10;
 }
 
-.carousel-indicators li[data-bs-target] {
+.carousel-indicators button[data-bs-target] {
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
   width: 11px;
@@ -140,7 +141,7 @@ a:focus {
   background-clip: padding-box;
 }
 
-.carousel-indicators li[data-bs-target].active {
+.carousel-indicators button[data-bs-target].active {
   background-color: #40babd;
   width: 11px;
   height: 11px;

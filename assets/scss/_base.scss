@@ -106,8 +106,9 @@ a {
 .carousel-indicators {
     bottom: 30px;
     margin-bottom: 0;
+    z-index: 10;
     
-    li[data-bs-target] {
+    button[data-bs-target] {
         background-color: rgba(256, 256, 256, 0.4);
         border: none;
         width: 11px;

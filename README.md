@@ -31,7 +31,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**Bootstrap 5 v1.0** - 2022-06-15
+**Bootstrap 5 v2.0** - 2023-06-22
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/?target=changelog)
 
