@@ -1,6 +1,6 @@
 /*   
  * Template Name: Appkit Landing - Responsive Website Template for Developers
- * Version: 2.0
+ * Version: 2.1
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * Website: https://themes.3rdwavemedia.com/
@@ -914,6 +914,14 @@ a:focus {
 
 .team-section .social a.google:hover {
   background: #d73925;
+}
+
+.team-section .social a.twitter-x {
+  background: #0F1419;
+}
+
+.team-section .social a.twitter-x:hover {
+  background: #3ea1ec;
 }
 
 .team-section .social a.twitter {

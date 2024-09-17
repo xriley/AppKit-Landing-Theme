@@ -67,6 +67,12 @@
                     background: darken($google, 5%);
                 }
             }
+            &.twitter-x {
+                background: $twitter-x;
+                &:hover {
+                    background: darken($twitter, 5%);
+                }
+            }
             &.twitter {
                 background: $twitter;
                 &:hover {
